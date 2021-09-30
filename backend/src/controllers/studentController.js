@@ -1,4 +1,5 @@
 import db from '../db/models';
+import logger from '../../file-logger';
 
 export const addNewStudent = async (req, res) => {
   const data = await db.Student.create(req.body);
@@ -13,6 +14,7 @@ export const getAllStudents = async (req, res) => {
         ['createdAt', 'DESC'],
       ],
     });
+    logger.write('GET /students SUCCESSFUL');
     return res.status(200).json({ data: students });
   } catch (error) {
     console.log(error);

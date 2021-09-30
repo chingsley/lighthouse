@@ -1,4 +1,5 @@
 require('dotenv').config();
+const logger = require('../../../file-logger');
 
 module.exports = {
   development: {
@@ -9,7 +10,7 @@ module.exports = {
     host: process.env.DB_HOST,
     dialect: process.env.DB_DIALECT,
     operatorsAliases: 0,
-    logging: 0,
+    logging: logger.write,
   },
   test: {
     username: '',
