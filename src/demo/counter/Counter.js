@@ -20,6 +20,10 @@ function Counter() {
       }, timeout * 1000);
     });
 
+  // delayInSeconds(5)
+  //   .finally(() => console.log('finally'))
+  //   .then(() => console.log('then'));
+
   const inrementAsync = () => {
     // setTimeout(() => {
     //   // setCount(count + 1);
