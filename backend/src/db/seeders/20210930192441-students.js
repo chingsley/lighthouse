@@ -9,6 +9,8 @@ const programs = [
   'Data Analyst',
 ];
 
+const valid_status_list = ['alumni', 'student'];
+
 const students = Array.from(Array(4)).map((_) => {
   const name = faker.name.findName();
   return {
@@ -16,6 +18,7 @@ const students = Array.from(Array(4)).map((_) => {
     program: faker.random.arrayElement(programs),
     id: uuidv4(),
     email: faker.internet.email(name.split(' ')[1]),
+    status: faker.random.arrayElement(valid_status_list),
   };
 });
 
