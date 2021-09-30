@@ -3,8 +3,15 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 import db from './db/models';
-import { getAllStudents, updateStudent } from './controllers/studentController';
-import { validateStudentStatus } from './middlewares/studentMiddleware';
+import {
+  getAllStudents,
+  updateStudent,
+  addNewStudent,
+} from './controllers/studentController';
+import {
+  validateStudent,
+  validateStudentStatus,
+} from './middlewares/studentMiddleware';
 
 dotenv.config();
 
@@ -19,6 +26,7 @@ server.get('/', (req, res) => {
 });
 
 server.get('/students', getAllStudents);
+server.post('/students', validateStudent, validateStudentStatus, addNewStudent);
 server.patch('/students/:studentId', validateStudentStatus, updateStudent);
 
 server.use(function (req, res) {
