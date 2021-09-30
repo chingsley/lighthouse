@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon --exec babel-node ./src/index.js",
-    "server": "nodemon -r esm ./src/index.js"
+    "server": "nodemon -r esm ./src/index.js",
+    "db:migrate:undo": " sequelize db:migrate:undo:all --env development",
+    "db:migrate": "sequelize db:migrate --env development",
+    "db:reset:dev": "npm run db:migrate:undo && npm run db:migrate",
+    "db:seed:dev": "npm run db:reset:dev && sequelize db:seed:all --env development"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +38,8 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-module-resolver": "^4.0.0",
     "esm": "^3.2.25",
-    "nodemon": "^2.0.13"
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.13",
+    "uuid": "^8.3.2"
   }
 }
