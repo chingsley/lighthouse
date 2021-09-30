@@ -1,10 +1,18 @@
 import db from '../db/models';
 
-export const addNewStudent = async (req, res) => {};
+export const addNewStudent = async (req, res) => {
+  const data = await db.Student.create(req.body);
+  return res.status(201).json({ message: 'successfully added new user', data });
+};
 
 export const getAllStudents = async (req, res) => {
   try {
-    const students = await db.Student.findAll();
+    const students = await db.Student.findAll({
+      order: [
+        ['updatedAt', 'DESC'],
+        ['createdAt', 'DESC'],
+      ],
+    });
     return res.status(200).json({ data: students });
   } catch (error) {
     console.log(error);

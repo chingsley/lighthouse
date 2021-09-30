@@ -10,3 +10,16 @@ export const validateStudentStatus = (req, res, next) => {
 
   return next();
 };
+
+export const validateStudent = (req, res, next) => {
+  const requiredFields = ['name', 'email', 'program', 'status'];
+  for (let field of requiredFields) {
+    if (!(field in req.body)) {
+      return res
+        .status(400)
+        .json({ error: `missing field ${field} in request body` });
+    }
+  }
+
+  return next();
+};
