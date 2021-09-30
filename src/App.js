@@ -1,10 +1,10 @@
 import './App.css';
-import Counter from './Counter';
+import UseReducer from './demo/userBoard/final';
 
 function App() {
   return (
     <div className='App'>
-      <Counter />
+      <UseReducer />
     </div>
   );
 }
