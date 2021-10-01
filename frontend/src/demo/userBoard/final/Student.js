@@ -1,13 +1,18 @@
 import React from 'react';
+import flags from '../../../data/countryFlags';
 
-function Student() {
+function Student(props) {
+  console.log('props: ', props);
+  const { program, name, status } = props.student;
+  const imgUrl = flags['France'.toLowerCase()];
+  console.log(imgUrl, flags);
   return (
     <div className='item'>
       <div className='item-header'>
         <p>Lighthouse Labs</p>
-        <span>Software Engineer</span>
+        <span>{program}</span>
         <br />
-        <span className='student-status'>Alumni</span>
+        <span className='student-status'>{status}</span>
       </div>
       <div className='item-body'>
         <div className='img-container'>
@@ -16,19 +21,23 @@ function Student() {
             src='https://cdn4.vectorstock.com/i/thumb-large/46/78/person-gray-photo-placeholder-girl-material-design-vector-23804678.jpg'
             alt=''
           />
-          <span className='country-flag'></span>
+          <span
+            className='country-flag'
+            style={{
+              background: `url(${imgUrl})`,
+            }}
+          ></span>
         </div>
       </div>
-      <h4 className='student-name'>Student Name</h4>
+      <h4 className='student-name'>{name}</h4>
       <p>Vancouver</p>
-      <button className='btn'>Graduate</button>
-      {/* <span className='span-info'>Software engineering</span> */}
-      <p className='bio'>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non modi,
-        dignissimos maiores alias accusantium reiciendis, iusto quisquam
-        numquam, beatae fugiat dolores. Delectus dolorum quas eligendi iste sint
-        sequi officiis accusamus?
-      </p>
+      {status.toLowerCase() === 'alumni' ? (
+        <span className='span-info'>Software engineering</span>
+      ) : (
+        <button className='btn'>Graduate</button>
+      )}
+
+      <p className='bio'>Stacks: Nodejs, React, React Native, PostgreSQL</p>
     </div>
   );
 }

@@ -12,7 +12,7 @@ export const validateStudentStatus = (req, res, next) => {
 };
 
 export const validateStudent = (req, res, next) => {
-  const requiredFields = ['name', 'email', 'program', 'status'];
+  const requiredFields = ['name', 'country', 'program', 'status'];
   for (let field of requiredFields) {
     if (!(field in req.body)) {
       return res

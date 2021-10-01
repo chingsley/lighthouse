@@ -1,15 +1,4 @@
-const { v4: uuidv4 } = require('uuid');
-const faker = require('faker');
-
-const programs = [
-  'Software Engineering',
-  'Data Science',
-  'Engineering Manager',
-  'Devops Engineering',
-  'Data Analyst',
-];
-
-const countryFlags = {
+const flags = {
   canada: 'https://tappage.theaccessplatform.com/static/media/ca.5916ba94.svg',
   belgium: 'https://lipis.github.io/flag-icon-css/flags/4x3/be.svg',
   croatia: 'https://lipis.github.io/flag-icon-css/flags/4x3/hr.svg',
@@ -29,29 +18,8 @@ const countryFlags = {
   sweden: 'https://lipis.github.io/flag-icon-css/flags/4x3/se.svg',
   switzerland: 'https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg',
   netherlands: 'https://lipis.github.io/flag-icon-css/flags/4x3/nl.svg',
+  unknonwn:
+    'https://www.careersinafrica.com/wp-content/uploads/2020/05/placeholder.png',
 };
 
-const valid_status_list = ['alumni', 'student'];
-
-const students = Array.from(Array(4)).map((_) => {
-  const name = faker.name.findName();
-  return {
-    name,
-    program: faker.random.arrayElement(programs),
-    id: uuidv4(),
-    country: faker.random.arrayElement(Object.keys(countryFlags)),
-    status: faker.random.arrayElement(valid_status_list),
-  };
-});
-
-module.exports = {
-  // eslint-disable-next-line no-unused-vars
-  up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('Students', students);
-  },
-
-  // eslint-disable-next-line no-unused-vars
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Roles', null, {});
-  },
-};
+export default flags;
