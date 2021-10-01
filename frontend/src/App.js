@@ -1,10 +1,10 @@
-import './App.css';
-import UseReducer from './demo/userBoard/final';
+import "./App.css";
+import StudentsBoard from "./class-components/components/StudentsBoard";
 
 function App() {
   return (
-    <div className='App'>
-      <UseReducer />
+    <div className="App">
+      <StudentsBoard />
     </div>
   );
 }

@@ -1,24 +1,21 @@
-import db from '../db/models';
-import logger from '../../file-logger';
+import db from "../db/models";
+import logger from "../../file-logger";
 
 export const addNewStudent = async (req, res) => {
   const data = await db.Student.create(req.body);
-  return res.status(201).json({ message: 'successfully added new user', data });
+  return res.status(201).json({ message: "successfully added new user", data });
 };
 
 export const getAllStudents = async (req, res) => {
   try {
     const students = await db.Student.findAll({
-      order: [
-        ['updatedAt', 'DESC'],
-        ['createdAt', 'DESC'],
-      ],
+      order: [["createdAt", "DESC"]],
     });
-    logger.write('GET /students SUCCESSFUL');
+    logger.write("GET /students SUCCESSFUL");
     return res.status(200).json({ data: students });
   } catch (error) {
-    logger.write('GET /students ', error.message);
-    return res.status(500).json({ error: 'Internal server error' });
+    logger.write("GET /students ", error.message);
+    return res.status(500).json({ error: "Internal server error" });
   }
 };
 
@@ -32,16 +29,12 @@ export const updateStudent = (req, res) => {
       // }
       return student.update(req.body);
     })
-    .then((result) => {
-      console.log({ result });
-      return db.Student.findAll({ order: [['updatedAt', 'DESC']] });
-    })
-    .then((students) => {
-      return res.status(200).json({ data: students });
+    .then((student) => {
+      return res.status(200).json({ data: student });
     })
     .catch((error) => {
-      logger.write('PATCH /students/:studentId ', error.message);
-      return res.status(500).json({ error: 'Internal server error' });
+      logger.write("PATCH /students/:studentId ", error.message);
+      return res.status(500).json({ error: "Internal server error" });
     });
 };
 
@@ -56,10 +49,10 @@ export const deleteStudent = async (req, res) => {
     }
 
     await student.destroy();
-    return res.status(200).json({ message: 'Record deleted' });
+    return res.status(200).json({ message: "Record deleted" });
   } catch (error) {
-    logger.write('DELETE /students/:studentId ', error.message);
-    return res.status(500).json({ error: 'internal server error' });
+    logger.write("DELETE /students/:studentId ", error.message);
+    return res.status(500).json({ error: "internal server error" });
   }
 };
 
