@@ -29,7 +29,7 @@ function UserBoard() {
       <section>
         <form className='form' onSubmit={handleSubmit} autoComplete='off'>
           <div className='form-control'>
-            <label htmlFor='firstName'>Name : </label>
+            <label htmlFor='firstName'>Name</label>
             <input
               type='text'
               id='firstName'
@@ -38,7 +38,7 @@ function UserBoard() {
             />
           </div>
           <div className='form-control'>
-            <label htmlFor='country'>Country : </label>
+            <label htmlFor='country'>Country</label>
             <input
               type='text'
               id='country'
@@ -47,7 +47,7 @@ function UserBoard() {
             />
           </div>
           <div className='form-control'>
-            <label htmlFor='program'>Program : </label>
+            <label htmlFor='program'>Program</label>
             <input
               type='text'
               id='program'

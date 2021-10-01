@@ -3,8 +3,10 @@ import flags from '../../../data/countryFlags';
 
 function Student(props) {
   console.log('props: ', props);
-  const { program, name, status } = props.student;
-  const imgUrl = flags['France'.toLowerCase()];
+  const { program, name, status, country } = props.student;
+  const imgUrl =
+    flags[country.toLowerCase()] ||
+    'https://www.careersinafrica.com/wp-content/uploads/2020/05/placeholder.png';
   console.log(imgUrl, flags);
   return (
     <div className='item'>
@@ -25,12 +27,15 @@ function Student(props) {
             className='country-flag'
             style={{
               background: `url(${imgUrl})`,
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
             }}
           ></span>
         </div>
       </div>
       <h4 className='student-name'>{name}</h4>
-      <p>Vancouver</p>
+      <p className='student-country'>{country}</p>
       {status.toLowerCase() === 'alumni' ? (
         <span className='span-info'>Software engineering</span>
       ) : (

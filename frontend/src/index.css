@@ -12,7 +12,8 @@ Variables
   --clr-primary-4: hsl(205, 63%, 48%);
   /* primary/main color */
   --clr-primary-5: hsl(205, 78%, 60%);
-  --clr-primary-5-light: rgba(73, 166, 243, 0.5);
+  /* --clr-primary-5-light: rgba(73, 166, 243, 0.2); */
+  --clr-primary-5-light: #f6f6f6;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -205,7 +206,8 @@ p {
   padding-bottom: 2rem;
 }
 .item-header {
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
+  background-color: var(--clr-primary-5-light);
   height: 130px;
   text-align: right;
   padding: 0.5rem;
@@ -214,17 +216,22 @@ p {
   color: var(--clr-primary-4);
 }
 .item-body {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: -65px;
 }
 .student-name {
   color: #274874;
-  /* font-family: Source Sans Pro, Arial, Helvetica Neue, Helvetica, sans-serif; */
-  /* font-size: 2rem; */
+  font-size: 1.3rem;
+}
+.student-name,
+.student-country {
+  margin: 0.5rem;
+  text-transform: capitalize;
 }
 
 .img-container {
   border: 5px solid #fff;
+  /* border: 5px solid var(--clr-primary-5-light); */
   margin: auto;
 
   width: 10rem;
@@ -236,8 +243,8 @@ p {
   align-items: center;
 }
 .country-flag {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border: 0.3rem solid #fff;
   box-sizing: border-box;
   position: absolute;
@@ -248,10 +255,9 @@ p {
   transition: all 0.15s ease-in-out;
 
   /* background-image: url('https://lipis.github.io/flag-icon-css/flags/4x3/al.svg'); */
-  /* background-image: url('https://tappage.theaccessplatform.com/static/media/ca.5916ba94.svg'); */
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 .img {
   /* border: 1px solid blue; */
