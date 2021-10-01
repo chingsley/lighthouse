@@ -210,3 +210,19 @@ Fri Oct 01 2021 09:08:16 GMT+0100 (West Africa Standard Time): Executing (defaul
 Fri Oct 01 2021 09:08:17 GMT+0100 (West Africa Standard Time): Executing (default): INSERT INTO "Students" ("name","program","id","country","status") VALUES ('Charlotte Morissette','Engineering Manager','3c9c96ef-555b-4e6c-84a9-eab0e015af86','wales','student'),('Claudia Langosh I','Software Engineering','70afb8ec-2936-4e23-8330-1b37cc76e138','united kingdom','alumni'),('Regina Koepp','Software Engineering','fef76f74-b00e-4333-bdbd-d00b1a49e8d2','portugal','alumni'),('Tyrone Langosh','Data Science','053d4eed-c7fb-4eab-ba91-de36a785495e','finland','student');, [object Object]
 Fri Oct 01 2021 09:08:53 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
 Fri Oct 01 2021 09:08:53 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
+Fri Oct 01 2021 09:21:21 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
+Fri Oct 01 2021 09:21:21 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
+Fri Oct 01 2021 09:23:45 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
+Fri Oct 01 2021 09:23:45 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
+Fri Oct 01 2021 09:24:59 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
+Fri Oct 01 2021 09:24:59 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
+Fri Oct 01 2021 09:29:57 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
+Fri Oct 01 2021 09:29:57 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
+Fri Oct 01 2021 09:33:31 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
+Fri Oct 01 2021 09:33:31 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
+Fri Oct 01 2021 09:47:00 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
+Fri Oct 01 2021 09:47:00 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
+Fri Oct 01 2021 09:47:04 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
+Fri Oct 01 2021 09:47:04 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
+Fri Oct 01 2021 09:51:11 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "country", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;, [object Object]
+Fri Oct 01 2021 09:51:11 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
