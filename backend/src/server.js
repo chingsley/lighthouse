@@ -7,6 +7,7 @@ import {
   getAllStudents,
   updateStudent,
   addNewStudent,
+  deleteStudent,
 } from './controllers/studentController';
 import {
   validateStudent,
@@ -28,6 +29,7 @@ server.get('/', (req, res) => {
 server.get('/students', getAllStudents);
 server.post('/students', validateStudent, validateStudentStatus, addNewStudent);
 server.patch('/students/:studentId', validateStudentStatus, updateStudent);
+server.delete('/students/:studentId', deleteStudent);
 
 server.use(function (req, res) {
   res.status(404).json({ error: 'route not found' });

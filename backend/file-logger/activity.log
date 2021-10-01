@@ -8,3 +8,46 @@ Fri Oct 01 2021 00:08:18 GMT+0100 (West Africa Standard Time): Executing (defaul
 Fri Oct 01 2021 00:08:28 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" ORDER BY "Student"."updatedAt" DESC, "Student"."createdAt" DESC;
 Fri Oct 01 2021 00:08:28 GMT+0100 (West Africa Standard Time): GET /students SUCCESSFUL
 Fri Oct 01 2021 00:09:37 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result
+Fri Oct 01 2021 00:19:16 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result
+Fri Oct 01 2021 00:29:28 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result
+Fri Oct 01 2021 00:30:15 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';
+Fri Oct 01 2021 00:30:15 GMT+0100 (West Africa Standard Time): Executing (default): DELETE FROM "Students" WHERE "id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c'
+Fri Oct 01 2021 00:30:55 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';
+Fri Oct 01 2021 00:31:21 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';
+Fri Oct 01 2021 00:31:21 GMT+0100 (West Africa Standard Time): DELETE /students/:studentId 
+Fri Oct 01 2021 00:32:57 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result
+Fri Oct 01 2021 00:33:16 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';
+Fri Oct 01 2021 00:33:16 GMT+0100 (West Africa Standard Time): DELETE /students/:studentId 
+Fri Oct 01 2021 00:38:16 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:38:24 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:38:24 GMT+0100 (West Africa Standard Time): DELETE /students/:studentId , Cannot read property 'destroy' of null
+Fri Oct 01 2021 00:40:07 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:40:15 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:40:15 GMT+0100 (West Africa Standard Time): DELETE /students/:studentId , Cannot set headers after they are sent to the client
+Fri Oct 01 2021 00:40:44 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:40:53 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:41:48 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:44:40 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:44:40 GMT+0100 (West Africa Standard Time): DELETE /students/:studentId , Cannot set headers after they are sent to the client
+Fri Oct 01 2021 00:45:17 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:45:21 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:45:21 GMT+0100 (West Africa Standard Time): DELETE /students/:studentId , Cannot set headers after they are sent to the client
+Fri Oct 01 2021 00:46:10 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:46:16 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:46:17 GMT+0100 (West Africa Standard Time): DELETE /students/:studentId , Cannot set headers after they are sent to the client
+Fri Oct 01 2021 00:47:59 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:50:00 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:50:11 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:50:39 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:50:50 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:56:30 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:56:36 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:56:55 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:56:55 GMT+0100 (West Africa Standard Time): PATCH /students/:studentId , Student not found
+Fri Oct 01 2021 00:56:56 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:56:56 GMT+0100 (West Africa Standard Time): PATCH /students/:studentId , Student not found
+Fri Oct 01 2021 00:58:37 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:58:41 GMT+0100 (West Africa Standard Time): Executing (default): SELECT "id", "email", "name", "program", "status", "createdAt", "updatedAt" FROM "Students" AS "Student" WHERE "Student"."id" = 'd8e682fb-0c16-4ed4-8190-041ffd02b51c';, [object Object]
+Fri Oct 01 2021 00:58:41 GMT+0100 (West Africa Standard Time): PATCH /students/:studentId , Student not found
+Fri Oct 01 2021 00:59:01 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
+Fri Oct 01 2021 00:59:34 GMT+0100 (West Africa Standard Time): Executing (default): SELECT 1+1 AS result, [object Object]
