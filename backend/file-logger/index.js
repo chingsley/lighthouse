@@ -26,9 +26,10 @@ const callback = (error) => {
   }
 };
 
-function write(content) {
-  if (content) {
-    appendFile(file, `${new Date()}: ${content}\n`, callback);
+function write(...content) {
+  console.log(content.join(', '));
+  if (content && content.length > 0) {
+    appendFile(file, `${new Date()}: ${content.join(', ')}\n`, callback);
   }
 }
 
